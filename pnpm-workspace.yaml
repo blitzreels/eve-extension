@@ -1,0 +1,10 @@
+packages: []
+
+minimumReleaseAgeExclude:
+  - '@blitzreels/contracts@0.2.0'
+  - '@blitzreels/sdk@0.2.0'
+
+onlyBuiltDependencies:
+  - esbuild
+
+trustPolicy: no-downgrade
