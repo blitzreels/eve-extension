@@ -7,8 +7,11 @@ AI generation, and exports.
 It wraps [`@blitzreels/sdk`](https://www.npmjs.com/package/@blitzreels/sdk), so tool calls run in
 your app runtime against the same public API the CLI and MCP server use.
 
-This repository contains only the Eve integration. The BlitzReels SDK, CLI, application,
-backend, infrastructure, and internal contracts are maintained privately.
+This MIT repository contains only the Eve integration.
+The SDK and CLI npm artifacts are public, but their source is proprietary and maintained privately.
+
+The application, API implementation, editor internals, backend, and infrastructure are not included.
+The extension only consumes the documented API through the published SDK.
 
 ## Install
 
