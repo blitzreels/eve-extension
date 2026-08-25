@@ -56,6 +56,8 @@ once, then surface the clip to a human rather than looping.
 
 Use `reselect_clip` for an exact `time_range`, a chosen `suggestion`, or a fresh `auto_best` selection.
 Exact time ranges are preserved.
+Pass `layoutMode: people_first`, `contentTypeHint: podcast`, and a caption look when regenerating interviews.
+People-first output uses one speaker focus frame or two distinct speaker frames; it does not use letterbox.
 
 Use `list_caption_words` before word-level caption work and `set_caption_look` for a verified style receipt.
 Caption warnings are advisory; never disable rendering because source-burned captions are not editable.
@@ -64,7 +66,7 @@ Verify a repair visually with `render_snapshot` on the clip's project id before 
 
 ## 5. Export
 
-`export_clip` per clip, or `start_export` for a whole project, then poll `get_export`
+`export_clip` per clip, or `start_export` with the current project revision for a whole project, then poll `get_export`
 for the download URL. Blocking QA prevents an export — repair first.
 
 Use `delete_clip_batch` with `dryRun: true` before cleanup, then repeat with explicit retention and confirmation.

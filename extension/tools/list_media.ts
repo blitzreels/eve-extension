@@ -13,8 +13,9 @@ export default defineTool({
     folderId: z.string().optional(),
     limit: z.number().int().min(1).max(100).optional(),
     offset: z.number().int().min(0).optional(),
+    cursor: z.string().optional(),
   }),
-  async execute({ search, assetType, folderId, limit, offset }) {
+  async execute({ search, assetType, folderId, limit, offset, cursor }) {
     const client = getBlitzReelsClient();
     return callBlitzReels({
       run: () =>
@@ -26,6 +27,8 @@ export default defineTool({
           orientation: undefined,
           limit,
           offset,
+          cursor,
+          includeTotal: false,
         }),
     });
   },

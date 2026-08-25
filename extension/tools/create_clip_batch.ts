@@ -30,9 +30,13 @@ export default defineTool({
       .string()
       .optional()
       .describe("Caption theme id applied to every clip in the batch."),
+    studioSound: z
+      .boolean()
+      .optional()
+      .describe("Clean the source audio once before rendering the batch."),
   }),
   approval: once(),
-  async execute({ assetId, youtubeUrl, quality, clipPresetId, captionThemeId }, ctx) {
+  async execute({ assetId, youtubeUrl, quality, clipPresetId, captionThemeId, studioSound }, ctx) {
     if (!assetId && !youtubeUrl) {
       return invalidInput({
         message: "Provide either `assetId` or `youtubeUrl`.",
@@ -50,7 +54,9 @@ export default defineTool({
             quality: quality ?? null,
           },
           clipPresetId: clipPresetId ?? null,
+          maxClipCount: null,
           captionThemeId: captionThemeId ?? null,
+          studioSound,
           createFlowOptions: undefined,
           brandingOptions: undefined,
           idempotencyKey: idempotencyKeyFor({

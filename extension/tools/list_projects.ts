@@ -23,6 +23,9 @@ export default defineTool({
           limit,
           offset,
           cursor: undefined,
+          excludeClipProjects: undefined,
+          hasExport: undefined,
+          sortBy: undefined,
         }),
     });
   },

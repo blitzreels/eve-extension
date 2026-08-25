@@ -2,7 +2,7 @@ packages: []
 
 minimumReleaseAgeExclude:
   - '@blitzreels/contracts@0.2.0'
-  - '@blitzreels/sdk@0.2.0'
+  - '@blitzreels/sdk@0.2.0 || 0.2.6'
 
 onlyBuiltDependencies:
   - esbuild

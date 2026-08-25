@@ -11,6 +11,7 @@ export default defineTool({
     "Start rendering a whole BlitzReels project to a video file. Returns an export id and job id; poll the `get_export` tool for the download URL.",
   inputSchema: z.object({
     projectId: z.string().min(1),
+    expectedRevision: z.number().int().nonnegative(),
     resolution: z.enum(["720p", "1080p"]).default("1080p"),
     format: z.enum(["mp4", "mov"]).default("mp4"),
     coverFrameSeconds: z
@@ -20,12 +21,13 @@ export default defineTool({
       .describe("Timestamp used for the export thumbnail."),
   }),
   approval: once(),
-  async execute({ projectId, resolution, format, coverFrameSeconds }, ctx) {
+  async execute({ projectId, expectedRevision, resolution, format, coverFrameSeconds }, ctx) {
     const client = getBlitzReelsClient();
     return callBlitzReels({
       run: () =>
         client.exports.start({
           projectId,
+          expectedRevision,
           resolution,
           format,
           coverFrameSeconds,

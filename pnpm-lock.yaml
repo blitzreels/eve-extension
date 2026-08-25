@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@blitzreels/sdk':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.6
+        version: 0.2.6
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -103,12 +103,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@blitzreels/contracts@0.2.0':
-    resolution: {integrity: sha512-2NOBMoQatxBB164mIkVfx8rsVAuNi2z5PKAqg1696+BstoUZtDodPHQ5SHrhXQKKiyrfCVgCZKO7BdjclhkFAg==}
+  '@blitzreels/contracts@0.2.2':
+    resolution: {integrity: sha512-40UL1Op8llRR46dBQ7i90v1pThIuJahQZA9U4mS3UxD0FgMicJM8hs/Kxu13cg0jpZKqcYJVzzd+91+SysC+QQ==}
     engines: {node: '>=20'}
 
-  '@blitzreels/sdk@0.2.0':
-    resolution: {integrity: sha512-Jtowqe6Vpwo/+LO/7KzJKrC9KaNrCaGbndQ7ps9M7O8epvXTT/E/y4Ns0At93izMbDRBJa1fFfY0EuqmWN19cw==}
+  '@blitzreels/sdk@0.2.6':
+    resolution: {integrity: sha512-uYlaL75Hgwsv2juagurc6OXY4tP47VjLFaUbqy8E81uZQKCTWJJBDTbLiM59LgTuKq2gUMxpecOSE/kw/6+67w==}
     engines: {node: '>=20'}
 
   '@emnapi/core@1.11.2':
@@ -555,11 +555,11 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.6':
     optional: true
 
-  '@blitzreels/contracts@0.2.0': {}
+  '@blitzreels/contracts@0.2.2': {}
 
-  '@blitzreels/sdk@0.2.0':
+  '@blitzreels/sdk@0.2.6':
     dependencies:
-      '@blitzreels/contracts': 0.2.0
+      '@blitzreels/contracts': 0.2.2
 
   '@emnapi/core@1.11.2':
     dependencies:

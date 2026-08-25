@@ -2,7 +2,7 @@ import { BlitzReelsClient } from "@blitzreels/sdk";
 
 import extension from "../extension";
 
-const USER_AGENT = "blitzreels-eve/0.2.1";
+const USER_AGENT = "blitzreels-eve/0.2.2";
 
 let client: BlitzReelsClient | null = null;
 
