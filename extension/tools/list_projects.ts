@@ -25,6 +25,7 @@ export default defineTool({
           cursor: undefined,
           excludeClipProjects: undefined,
           hasExport: undefined,
+          aspectRatio: undefined,
           sortBy: undefined,
         }),
     });

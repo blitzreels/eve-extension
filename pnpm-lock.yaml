@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@blitzreels/sdk':
-        specifier: ^0.2.6
-        version: 0.2.6
+        specifier: ^0.2.7
+        version: 0.2.7
       zod:
         specifier: 4.4.3
         version: 4.4.3
@@ -107,8 +107,8 @@ packages:
     resolution: {integrity: sha512-40UL1Op8llRR46dBQ7i90v1pThIuJahQZA9U4mS3UxD0FgMicJM8hs/Kxu13cg0jpZKqcYJVzzd+91+SysC+QQ==}
     engines: {node: '>=20'}
 
-  '@blitzreels/sdk@0.2.6':
-    resolution: {integrity: sha512-uYlaL75Hgwsv2juagurc6OXY4tP47VjLFaUbqy8E81uZQKCTWJJBDTbLiM59LgTuKq2gUMxpecOSE/kw/6+67w==}
+  '@blitzreels/sdk@0.2.7':
+    resolution: {integrity: sha512-dcXke0BIUtVDBrmhvc2x+bsfOXHflu3EolynqD8mpnE9zxGaOaKXVLkTfnNxYgt3WChiLqmUwGef6BH77iaPpg==}
     engines: {node: '>=20'}
 
   '@emnapi/core@1.11.2':
@@ -557,7 +557,7 @@ snapshots:
 
   '@blitzreels/contracts@0.2.2': {}
 
-  '@blitzreels/sdk@0.2.6':
+  '@blitzreels/sdk@0.2.7':
     dependencies:
       '@blitzreels/contracts': 0.2.2
 
