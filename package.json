@@ -1,6 +1,6 @@
 {
   "name": "@blitzreels/eve",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "eve extension that gives durable AI agents BlitzReels video editing, clipping, generation, and export tools.",
   "homepage": "https://blitzreels.com/",
   "license": "MIT",
@@ -49,7 +49,7 @@
     "verify": "pnpm check:boundary && pnpm lint && pnpm typecheck && pnpm build"
   },
   "dependencies": {
-    "@blitzreels/sdk": "^0.2.7",
+    "@blitzreels/sdk": "^0.2.10",
     "zod": "4.4.3"
   },
   "devDependencies": {
