@@ -141,3 +141,9 @@ pnpm typecheck
 - BlitzReels API docs: <https://www.blitzreels.com/docs>
 - OpenAPI: <https://www.blitzreels.com/api/openapi.json>
 - Eve extensions: <https://eve.dev/docs/extensions>
+
+## Generation inputs
+
+Image and video tools accept model-supported resolutions and optional prompt enhancement.
+Video generation also accepts end-frame, image, video, and audio references, plus provider and seed controls.
+The production API validates each model's supported inputs and limits.
