@@ -58,6 +58,7 @@ Use `reselect_clip` for an exact `time_range`, a chosen `suggestion`, or a fresh
 Exact time ranges are preserved.
 Pass `layoutMode: people_first`, `contentTypeHint: podcast`, and a caption look when regenerating interviews.
 People-first output uses one speaker focus frame or two distinct speaker frames; it does not use letterbox.
+This step is complete when the regenerated clip uses the requested range, layout, and caption overrides.
 
 Use `list_caption_words` before word-level caption work and `set_caption_look` for a verified style receipt.
 Caption warnings are advisory; never disable rendering because source-burned captions are not editable.

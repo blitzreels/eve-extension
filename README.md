@@ -61,7 +61,7 @@ The mount above exposes `blitzreels__list_projects`, `blitzreels__create_clip_ba
 | `create_clip_batch` | write, spends credits | `once()` |
 | `get_clip_batch` | read | — |
 | `list_clips` | read | — |
-| `reselect_clip` | write | — |
+| `reselect_clip` | write with layout and caption overrides | — |
 | `repair_clip` | write | — |
 | `export_clip` | write, renders | `once()` |
 | `list_caption_words` | read | — |

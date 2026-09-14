@@ -40,6 +40,7 @@ export default defineTool({
           generateBackgroundMusic: input.generateBackgroundMusic,
           generateSoundEffects: input.generateSoundEffects,
           characterIds: undefined,
+          styleReferenceAssetIds: undefined,
           plannerModelId: undefined,
           imageModelId: undefined,
           videoModel: undefined,
