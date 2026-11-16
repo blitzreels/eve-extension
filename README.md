@@ -127,6 +127,13 @@ each end user should act as themselves, and when you want whatever the server ex
 no package to upgrade. The connector UID above is whatever `vercel connect create` returns for
 your project.
 
+## Compatibility
+
+This release is built with eve 1.0.0 and requires eve 1.0.0 or later on Node.js 24+.
+The build generates the format-3 compatibility manifest; older eve releases and
+previously published format-1 builds are not compatible with this release.
+Rebuild from source with `pnpm verify` rather than editing a manifest.
+
 ## Develop
 
 ```bash

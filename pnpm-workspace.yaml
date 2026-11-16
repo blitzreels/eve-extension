@@ -3,6 +3,7 @@ packages: []
 minimumReleaseAgeExclude:
   - '@blitzreels/contracts@0.2.0 || 0.2.3 || 0.2.6'
   - '@blitzreels/sdk@0.2.0 || 0.2.6 || 0.2.7 || 0.2.10 || 0.2.18'
+  - eve@1.0.0
 
 onlyBuiltDependencies:
   - esbuild
